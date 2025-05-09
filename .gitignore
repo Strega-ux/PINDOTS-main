@@ -1,0 +1,69 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/venv
+#pycharm
+/.idea
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# eel
+/dist
+/react-eel-app.spec
+/venv
+/wvenv
+__pycache__
+yarn.lock
+/parameters.json
+package-lock.json
+
+
+AccessBrailleRAP.spec
+sign.txt
+pandoc-2.3.tar.gz
+plumbum-1.8.1-py3-none-any.whl
+pywin32-306-cp39-cp39-win_amd64.whl
+ply-3.11-py2.py3-none-any.whl
+nsis/AccessBrailleRAP.exe
+nsis/pandoc.exe
+nsis/AccessBrailleRAPSetup.exe
+.vscode/settings.json
+nsis/HeaderBitmap.exe
+nsis/InstallerLogo.bmp
+nsis/HeaderBitmap.nsi
+testdialog.py
+nsis/_internal.zip
+nsis/ChromeSetup.exe
+
+
+package/debian/AccessBrailleRAP-debian.deb
+package/debian/AccessBrailleRAP-debian/bin/AccessBrailleRAP-debian
+package/debian/accessbraillerap-debian/bin/accessbraillerap-debian
+package/ubuntu/accessbraillerap-ubuntu/bin/empty
+acces_brap_parameters.json
+package/rpi/accessbraillerap-rpi/usr/bin/
+package/rpi/accessbraillerap-rpi/usr/share/doc/accessbraillerap-rpi/changelog.gz
+package/debian_builldpackage/accessbraillerap-debian_0.5.7-1_amd64.deb
+package/debian_builldpackage/accessbraillerap_debian/accessbraillerap-debian
+package/debian_builldpackage/accessbraillerap_debian/debian/accessbraillerap-debian.substvars
+package/debian_builldpackage/accessbraillerap_debian/debian/accessbraillerap-debian/usr/bin/accessbraillerap-debian
+package/debian_fpm/accessbraillerap-debian.deb
+package/debian_fpm/accessbraillerap-debian/usr/bin/accessbraillerap-debian
+

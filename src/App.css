@@ -1,0 +1,636 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff6ee;
+  width: 100vw;
+  height: 100vh;
+  font-size: clamp(22px, 2.5vw, 30px);
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.mainmenu {
+  background-color: red;
+}
+
+.menu_font {
+  font-size: clamp(22px, 2.5vw, 30px);
+  margin-top: 2vw;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  margin: 0.2rem;
+  padding: 0.1rem;
+  margin-left: -19vw;
+}
+
+.menu-dark {
+  display: flex;
+  margin: 0.2rem;
+  padding: 0.1rem;
+
+  justify-content: center;
+  /* Alignements des liens dans le menu */
+}
+
+.menu li {
+  list-style-type: none;
+  /* Suppression des puces */
+}
+
+.menu-dark li {
+  list-style-type: none;
+  /* Suppression des puces */
+}
+
+.menu a {
+  box-sizing: border-box;
+  display: block;
+  /* Transformation en block */
+  text-align: center;
+  /* Centrage du texte */
+  text-decoration: none;
+  /* Suppression du soulignement */
+
+  margin: 1em;
+  margin-left: 3em;
+  padding: 0.5em 1em;
+  color: #fff;
+  background-color: #003b3b;
+  border: rgb(48, 48, 48) solid 1px;
+  min-width: 160px;
+  width: 20vw;
+  border-radius: 3px;
+  /* Arrondis des bordures */
+}
+
+.menu a:hover {
+  background-color: rgb(238, 238, 238);
+  color: rgb(8, 8, 8);
+  outline: 4px solid black;
+  border-radius: 4px;
+  border: 0px !important;
+}
+
+.menu a:focus {
+  text-decoration: none;
+  background-color: rgb(238, 238, 238);
+  color: rgb(8, 8, 8);
+  outline: 4px solid black;
+  border-radius: 4px;
+  border: 0px !important;
+}
+
+.menu-dark a {
+  box-sizing: border-box;
+  display: block;
+  /* Transformation en block */
+  text-align: center;
+  /* Centrage du texte */
+  text-decoration: none;
+  /* Suppression du soulignement */
+  margin: 0.2rem;
+  /* Marges externes */
+  padding: 0.25rem;
+  /* Marges internes */
+  color: rgb(192, 192, 192);
+  /* Couleur du texte */
+  border: rgb(8, 8, 8) solid 0px;
+  /* Bordure */
+}
+
+.menu-dark a:hover {
+  text-decoration: underline;
+  background-color: rgb(38, 38, 38);
+  color: rgb(255, 255, 255);
+  outline: 2px solid white;
+  border-radius: 4px;
+}
+
+.menu-dark a:focus {
+  text-decoration: none;
+  background-color: rgb(8, 8, 8);
+  color: rgb(255, 255, 255);
+  outline: 2px solid white;
+  border-radius: 4px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.main_div {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(58, 53, 53);
+}
+
+.main_div_dark {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(198, 193, 193);
+}
+
+.main_layout {
+  width: 100%;
+  min-height: 80vh;
+  height: 100%;
+  background-color: #fff6ee;
+}
+
+.headermain {
+  background-color: #fff6ee;
+  min-height: 8vh;
+}
+
+.headermain-dark {
+  background-color: rgb(8, 8, 8);
+  min-height: 8vh;
+}
+
+.headerside {
+  background-color: #fff6ee;
+  height: 8vh;
+}
+
+.headerside-dark {
+  background-color: rgb(58, 53, 53);
+  height: 8vh;
+}
+
+.bodymain {
+  background-color: #fff6ee;
+  border-width: 1;
+  min-height: 90vh;
+}
+
+.bodymain-dark {
+  background-color: rgb(8, 8, 8);
+  border-width: 1;
+  min-height: 90vh;
+}
+
+.bodyside {
+  background-color: rgb(58, 53, 53);
+  height: 100%;
+}
+
+.bodyside-dark {
+  background-color: rgb(198, 193, 193);
+  height: 100%;
+}
+
+.BrailleInput {
+  font-size: 25px;
+  border-color: black;
+  color: black;
+  font-size: 22px !important;
+  max-height: 70vh;
+  font-family: monospace;
+  background-color: white;
+  width: 80vw;
+  display: block;
+  margin: 3vw 0vw 10vh -12vw;
+  padding: 0.75em;
+  line-height: 1.6;
+}
+
+.BrailleInput:hover {
+  outline: 4px solid #003b3b;
+}
+
+.BrailleInput-dark {
+  border-color: white;
+  color: white;
+  font-size: calc(2px + 3vmin);
+  max-height: 70vh;
+  font-family: monospace;
+  background-color: black;
+}
+
+.BrailleInputTable {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  /*font-size: calc(10px + 8vmin);*/
+  scale: 1;
+}
+
+.BrailleDotInput {
+  text-align: center;
+}
+
+.ModalView {
+  color: black;
+  background-color: white;
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  min-height: 100%;
+}
+
+.ModalView-dark {
+  color: white;
+  background-color: rgb(8, 8, 8);
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  min-height: 100%;
+}
+
+.ModalBox {
+  position: absolute;
+  margin: 40px;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: auto;
+  webkitoverflowscrolling: touch;
+  borderradius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.ModalBox {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.ModalBox-dark {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  border: 1px solid #ccc;
+  background-color: #080808;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.BrailleView {
+  text-align: center;
+  margin: 1em auto 0 auto;
+  min-height: 100%;
+}
+
+.BigBraille {
+  font-size: calc(10px + 18vmin);
+}
+
+.BrailleOutput {
+  font-size: calc(1em + 0.4vw);
+  min-height: 100%;
+  color: black;
+  background-color: rgb(253, 253, 253);
+  font-family: monospace !important;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-height: 70vh;
+  padding: 30px 0 15px 25px;
+  width: 80vw;
+  line-height: 0.1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  margin-left: -12vw;
+}
+
+.BrailleOutput-dark {
+  font-size: calc(1em + 0.4vw);
+  min-height: 100%;
+  color: white;
+  background-color: rgb(8, 8, 8);
+  font-family: monospace !important;
+}
+
+.pad-button {
+  margin: 1vw;
+  padding: 0.5em 0.5em !important;
+  border-width: 0.1em !important;
+  border-style: hidden !important;
+  border-radius: 4px !important;
+  font-size: clamp(22px, 2.5vw, 30px) !important;
+  color: white !important;
+  background-color: #888899 !important;
+}
+
+.pad-button-dark {
+  color: white !important;
+  background-color: rgb(58, 53, 53) !important;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding: 0.5rem !important;
+  border-width: 0.1em !important;
+  border-style: hidden !important;
+  border-radius: 4px !important;
+  font-size: 1.5rem !important;
+}
+
+.pad-button:focus {
+  border: black !important;
+  /*border-width: 0.1em !important;
+  border-style: solid !important;*/
+  outline: 0.1em solid black !important;
+}
+
+.pad-button-dark:focus {
+  border: white !important;
+  /*border-width: 0.1em !important;
+  border-style: solid !important;*/
+  outline: 0.1em solid white !important;
+}
+
+.pad-button:hover {
+  border: black !important;
+  outline: 3px solid black !important;
+  color: #000 !important;
+}
+
+.pad-button-dark:hover {
+  border: white !important;
+  /*border-width: 0.1em !important;
+  border-style: solid !important;*/
+  outline: 0.1em solid white !important;
+}
+
+.divcolor {
+  border-color: burlywood;
+  background-color: red;
+}
+
+.divwhite {
+  border-color: rgb(175, 129, 69);
+  background-color: rgb(255, 253, 253);
+}
+
+.divred {
+  border-color: burlywood;
+  background-color: red;
+}
+
+.divblue {
+  border-color: burlywood;
+  background-color: aqua;
+}
+
+.divblack {
+  border-color: burlywood;
+  background-color: rgb(58, 53, 53);
+}
+
+.formparam {
+  text-align: start;
+  width: 80vw;
+  margin-left: -8vw;
+}
+
+.formparam h1 {
+  text-align: center;
+}
+
+.formparam p {
+  font-size: clamp(22px, 3vw, 30px) !important;
+  text-align: center;
+}
+
+.form-row {
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.form-row label {
+  flex: 1;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.form-row input,
+.form-row select {
+  width: 150px; /* or whatever fixed width you want */
+  font-size: clamp(22px, 2.4vw, 25px);
+  margin: 0.2em;
+  flex: 0 0 auto; /* prevent it from growing/shrinking */
+}
+
+.form-row select {
+  width: 300px;
+}
+
+.input {
+  color: rgb(8, 8, 8) !important;
+  height: 100%;
+}
+
+.input:focus {
+  color: rgb(8, 8, 8) !important;
+  height: 100%;
+  border-color: white !important;
+  border-width: 0.3em !important;
+  border-style: solid !important;
+  margin: 0 !important;
+}
+
+.input-dark {
+  height: 100%;
+  color: white !important;
+  background-color: rgb(8, 8, 8) !important;
+  margin: 0.2em !important;
+}
+
+.input-dark:focus {
+  color: white !important;
+  height: 100%;
+  background-color: rgb(8, 8, 8) !important;
+  border-color: white !important;
+  border-width: 0.3em !important;
+  border-style: solid !important;
+  margin: 0 !important;
+}
+
+.input:focus {
+  color: black !important;
+  padding: auto;
+  background-color: white !important;
+  border: 3px solid black !important;
+}
+
+.formparam label {
+  font-size: clamp(22px, 2.5vw, 25px);
+}
+
+.selectbraille,
+.selectparam {
+  font-size: clamp(22px, 2.5vw, 25px) !important;
+  max-width: 80% !important;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.selectbraille:hover,
+.selectparam:hover {
+  outline: 3px solid black !important;
+}
+
+.general {
+  color: black !important;
+  background-color: #fff6ee;
+  margin-top: clamp(-20px, 2vw, -30px);
+  margin-bottom: 10vh;
+}
+
+.general-dark {
+  color: white !important;
+  background-color: rgb(8, 8, 8) !important;
+}
+
+h1 {
+  color: black;
+  font-size: clamp(25px, 4vw, 37px) !important;
+}
+
+.h1 {
+  color: black;
+  font-size: clamp(32px, 2.5vw, 50px);
+}
+
+.h1-dark {
+  color: white;
+}
+
+svg {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p {
+  font-size: clamp(22px, 2.5vw, 30px) !important;
+}
+
+/* PINDOTS CSS */
+
+.pindotsLogo {
+  width: clamp(230px, 24vw, 300px);
+  margin: -3.5vw 0 -2vw 0;
+}
+
+.aboutUsLayout,
+.homeIcon {
+  width: auto;
+  position: absolute;
+  height: 60px;
+  top: 5vw;
+}
+
+.homeIcon {
+  left: 5vw;
+}
+
+.aboutUsLayout {
+  right: 3vw;
+}
+
+.homeLogo {
+  width: clamp(450px, 24vw, 550px);
+  display: block;
+  margin: 5vw auto 0.2vw auto;
+}
+
+.homeCTA {
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.homeButton {
+  width: auto;
+  font-size: clamp(22px, 2.5vw, 30px);
+  margin-top: 7vw;
+  background-color: #003b3b;
+  padding: 15px 30px 15px 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  font-style: bold;
+}
+
+.homeButton:hover,
+.homeButton:focus {
+  background-color: #eee;
+  border: 0 !important;
+  border-radius: 4px;
+  color: #080808;
+  outline: 4px solid #000;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vw;
+}
+
+.homebg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.aboutUs {
+  width: clamp(12vw, 5vw, 60px);
+  height: auto;
+  position: fixed;
+  top: clamp(20px, 0.2vw, 60px);
+  right: 20px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.textInputButtons {
+  width: 80vw;
+  margin-left: -10vw;
+}
