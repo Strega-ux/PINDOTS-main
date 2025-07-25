@@ -1,5 +1,5 @@
-# AccessBrailleRAP
-Braille transcription software for BrailleRAP. NVDA compatible.
+# PINDOTS
+A Braille transcription software derived from BrailleRAP. NVDA compatible.
 The project use several open source licensed software:
 - liblouisreact, a liblouis version slightly modified to run in react.js environnement.
 - liblouis 
