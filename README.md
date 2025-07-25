@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AccessBrailleRAP
 Braille transcription software for BrailleRAP. NVDA compatible.
 The project use several open source licensed software:
@@ -113,6 +112,12 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
+## Install additional python libraries
+
+```
+pip install pywebview pyserial pysound pyaudio speechrecognition pypandoc
+```
+
 ## Install nodejs dependencies
 
 ```
@@ -208,6 +213,8 @@ Raspberry PI OS come with python, we only need to istall nodejs and some python 
 ### build tools
     
     sudo apt install git-extras
+    sudo apt install pypandoc
+    sudo apt install pyaudio
 
 ### Python
 
@@ -239,6 +246,7 @@ Raspberry PI OS come with python, we only need to istall nodejs and some python 
     pip install pyserial
     pip install pyinstaller
     pip install pypandoc
+    pip install pyaudio
 
 ### Run in development environement
 
