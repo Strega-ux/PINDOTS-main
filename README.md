@@ -210,6 +210,11 @@ The packaged  binary release has been build on a Raspberry 4 2GO with latest 64 
 
 Raspberry PI OS come with python, we only need to istall nodejs and some python dependicies. We love to use virtual env on python, but the needed python packages are not available has wheel packages on arm (packages for pip cmd), so we must install the python dependencies in the global system configuration.
 
+Notes:
+If you encounter error in installing the nodejs, kindly check the version of the nodejs to see if its compatible with the RRaspberry PI OS (debian bookworm) version.
+
+In the case you cannot manually run the deb package in the terminal, you can locate the deb package in the folder.
+
 ### build tools
     
     sudo apt install git-extras
